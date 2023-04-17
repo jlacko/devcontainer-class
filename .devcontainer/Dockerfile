@@ -3,9 +3,9 @@ FROM rocker/r-base:4.2.2
 
 # external depencencies as deb packages
 # each apt call absoluterly positively must be on a single line (so that update & install end up in the same Docker cache)
-RUN apt-get update && apt-get -y install libgdal-dev=3.6.1+dfsg-1+b1
-RUN apt-get update && apt-get -y install libgeos-dev=3.11.1-1
-RUN apt-get update && apt-get -y install libproj-dev=9.1.1-1
+RUN apt-get update && apt-get -y install libgdal-dev
+RUN apt-get update && apt-get -y install libgeos-dev
+RUN apt-get update && apt-get -y install libproj-dev
 RUN apt-get update && apt-get -y install libudunits2-dev
 RUN apt-get update && apt-get -y install libxml2-dev
 RUN apt-get update && apt-get -y install libv8-dev
